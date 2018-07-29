@@ -54,13 +54,13 @@ void generateCal() {
 	cout << endl << endl << "           " << "SUN" << "    " << "MON" << "    " << "TUE" << "    " << "WED" << "    " << "THU" << "    " << "FRI" << "    " << "SAT" << endl;
 	
 	if (dayOfWeek == "sun") {
-		for (int i = 0; i < 37; i+=7) {
+		for (int i = 0; i < monthMaxDay; i+=7) {
 			cout << "Week " << week << "     " << calendar[i] << spacer(i) << calendar[i + 1] << spacer(i + 1) << calendar[i + 2] << spacer(i + 2) << calendar[i + 3] << spacer(i + 3) << calendar[i + 4] << spacer(i + 4) << calendar[i + 5] << spacer(i + 5) << calendar[i + 6] << endl;
 			week++;
 		}
 	}
 	else if (dayOfWeek == "mon") {
-		for (int i = 0; i < 37; i += 7) {
+		for (int i = 0; i < monthMaxDay; i += 7) {
 			if (i == 0)
 				cout << "Week " << week << "     " << "       " << calendar[i] << spacer(i) << calendar[i + 1] << spacer(i + 1) << calendar[i + 2] << spacer(i + 2) << calendar[i + 3] << spacer(i + 3) << calendar[i + 4] << spacer(i + 4) << calendar[i + 5] << endl;
 			else
@@ -72,7 +72,7 @@ void generateCal() {
 		}
 	}
 	else if (dayOfWeek == "tue") {
-		for (int i = 0; i < 37; i += 7) {
+		for (int i = 0; i < monthMaxDay; i += 7) {
 			if (i == 0)
 				cout << "Week " << week << "     " << "       " << "       " << calendar[i] << spacer(i) << calendar[i + 1] << spacer(i + 1) << calendar[i + 2] << spacer(i + 2) << calendar[i + 3] << spacer(i + 3) << calendar[i + 4] << endl;
 			else
@@ -84,7 +84,7 @@ void generateCal() {
 		}
 	}
 	else if (dayOfWeek == "wed") {
-		for (int i = 0; i < 37; i += 7) {
+		for (int i = 0; i < monthMaxDay; i += 7) {
 			if (i == 0)
 				cout << "Week " << week << "     " << "       " << "       " << "       " << calendar[i] << spacer(i) << calendar[i + 1] << spacer(i + 1) << calendar[i + 2] << spacer(i + 2) << calendar[i + 3] << endl;
 			else
@@ -96,7 +96,7 @@ void generateCal() {
 		}
 	}
 	else if (dayOfWeek == "thu") {
-		for (int i = 0; i < 37; i += 7) {
+		for (int i = 0; i < monthMaxDay; i += 7) {
 			if (i == 0)
 				cout << "Week " << week << "     " << "       " << "       " << "       " << "       " << calendar[i] << spacer(i) << calendar[i + 1] << spacer(i + 1) << calendar[i + 2] << endl;
 			else
@@ -108,7 +108,7 @@ void generateCal() {
 		}
 	}
 	else if (dayOfWeek == "fri") {
-		for (int i = 0; i < 37; i += 7) {
+		for (int i = 0; i < monthMaxDay; i += 7) {
 			if (i == 0)
 				cout << "Week " << week << "     " << "       " << "       " << "       " << "       " << "       " << calendar[i] << spacer(i) << calendar[i + 1] << endl;
 			else
@@ -120,7 +120,7 @@ void generateCal() {
 		}
 	}
 	else if (dayOfWeek == "sat") {
-		for (int i = 0; i <= 37; i += 7) {
+		for (int i = 0; i < monthMaxDay ; i += 7) {
 			if (i == 0)
 				cout << "Week " << week << "     " << "       " << "       " << "       " << "       " << "       " << "       " << calendar[i] << endl;
 			else
